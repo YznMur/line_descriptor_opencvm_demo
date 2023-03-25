@@ -1,13 +1,12 @@
-# 目标
-由于OpenCV3.4.6及以后版本将LSD线特征提取算法从代码中剔除，本库通过对OpenCV3.4.2及OpenCV-Contrib3.4.2的源代码中代码提取，提取出单独的LSD线特征提取算法并封装在cvm命名空间中。
+Target
+Since OpenCV3.4.6 and later versions remove the LSD line feature extraction algorithm from the code, this library extracts the separate LSD line feature extraction algorithm through the code extraction of the source code of OpenCV3.4.2 and OpenCV-Contrib3.4.2 and encapsulates it in in the cvm namespace.
 
-# 使用方式
-先进入line_descriptor_opencvm文件夹，然后
+How to use
+First enter the line_descriptor_opencvm folder, then
 ```
 mkdir build
 cd build
 cmake ..
 make
 ```
-之后会获得相应编译出的LSD算法的头文件和共享库文件
-然后对main函数进行cmake编译运行即可。就能得到两张图像的线特征提取，匹配的结果。
+After that, the header file and shared library file of the compiled LSD algorithm will be obtained, and then the main function can be compiled and run with cmake. The line feature extraction and matching results of the two images can be obtained.
